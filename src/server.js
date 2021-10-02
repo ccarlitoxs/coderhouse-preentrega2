@@ -10,6 +10,7 @@ app.use(express.urlencoded({extended:true}))
 
 app.use('/productos', productosRouter.router)
 app.use('/carritos', carritosRouter.router)
+app.use('/api/productos-test', testRouter.router)
 
 
 export{ app }
