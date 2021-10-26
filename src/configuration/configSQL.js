@@ -5,10 +5,10 @@ dotenv.config();
 export const config = {
     client: 'mysql',
     connection: {
-        host: process.env.HOST,
-        user: process.env.DBUSER,
-        password: process.env.DBPASSWORD,
-        database: process.env.DB,
+        host: process.env.HOSTSQL,
+        user: process.env.DBSQLUSER,
+        password: process.env.DBSQLPASSWORD,
+        database: process.env.DBSQL,
     },
     pool: {min:0, max:10}
 }
